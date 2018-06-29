@@ -1,0 +1,52 @@
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin box-shadow($prop) {
+  -webkit-box-shadow: $prop;
+     -moz-box-shadow: $prop;
+      -ms-box-shadow: $prop;
+          box-shadow: $prop;
+}
+
+@mixin text-shadow($prop) {
+  -webkit-text-shadow: $prop;
+     -moz-text-shadow: $prop;
+      -ms-text-shadow: $prop;
+          text-shadow: $prop;
+}
+
+@mixin letter-spacing($tracking){
+	letter-spacing: ( $tracking / 1000 ) * 1em; 
+}
+
+@mixin transition( $prop ){
+    -webkit-transition: $prop;
+    -moz-transition: $prop;
+    -o-transition: $prop;
+    transition: $prop;
+}
+
+@mixin transform( $prop ){
+    -webkit-transform: $prop;
+    -moz-transform: $prop;
+    -o-transform: $prop;
+    transform: $prop;
+}
+
+@mixin clearfix(){
+	content: "";
+	display: block;
+	float: none;
+	clear: both;
+}
+
+@mixin ul-col( $count ){
+  -webkit-column-count: $count;
+  -moz-column-count: $count;
+  column-count: $count;
+
+}

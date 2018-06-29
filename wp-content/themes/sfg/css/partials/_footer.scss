@@ -1,0 +1,156 @@
+.page-contact-us, .page-blog {
+	.contact {
+		display: none !important;
+	}
+}
+
+.page-home {
+	.contact {
+		background: #f3f3f3 url('../img/contact-bg.png') center top no-repeat !important;
+		background-size: cover !important;
+	}
+}
+
+.contact {
+	background: transparent url('../img/contact-bg.png') center top no-repeat;
+	background-size: cover;
+	padding: 60px 0 55px;
+
+	.gform_wrapper {
+
+		::placeholder {
+		    color: $lgry;
+		}
+
+		:-ms-input-placeholder {
+		    color: $lgry;
+		}
+
+		::-ms-input-placeholder {
+		    color: $lgry;
+		}
+
+		ul.gform_fields li.gfield {
+			display: inline-block;
+			margin: 0 5px 0 0;
+			padding-right: 0 !important;
+
+			&:not(:first-child) {
+				width: 311px !important;
+			}
+
+			input, select {
+				line-height: 40px;
+				font-size: 19px !important;
+				padding: 0 15px !important;
+			}
+
+			span {
+				color: white;
+				font-size: 30px;
+				text-transform: uppercase;
+				line-height: 29px;
+				margin-right: 17px;
+				position: relative;
+				top: 5px;
+			}
+		}
+
+		.gform_footer {
+			position: absolute;
+			top: 0;
+			right: 15px;
+			width: auto;
+			padding: 0;
+			margin: 0;
+
+			.gform_button {
+				border-radius: 0;
+				height: 40px;
+				object-fit: cover;
+				margin: 0;
+			}
+		}
+	}
+}
+
+.footer {
+	background: transparent url('../img/footer-bg.png') center top no-repeat;
+	background-size: cover;
+	padding: 70px 0 20px;
+
+	.office {
+		padding: 0;
+		margin-bottom: 50px;
+
+		li {
+			list-style: none;
+			font-size: 15px;
+			color: #b7b7b7;
+			margin-bottom: 10px;
+			text-transform: uppercase;
+		    letter-spacing: 2px;
+
+			i {
+				position: absolute;
+				left: -15px;
+				line-height: 20px;
+				text-align: center;
+				width: 22px;
+				font-size: 20px;
+
+				&.fa-phone {
+					border-radius: 50%;
+					border: 1px solid #b7b7b7;
+					font-size: 15px;
+				}
+			}
+
+			&.first-child {
+				margin-bottom: 30px;
+			}
+
+			a {
+				color: #b7b7b7;
+
+				&:hover, &:focus {
+					color: $wht;
+				}
+			}
+		}
+	}
+
+	#menu-primary-1 {
+		text-align: center;
+		width: 100%;
+		border-top: 1px solid #b7b7b7;
+		border-bottom: 1px solid #b7b7b7;
+		padding: 25px 0;
+		margin-bottom: 40px;
+		
+		li {
+			display: inline-block;
+
+			a {
+				color: #b7b7b7;
+				font-weight: 400;
+				font-size: 15px;
+				text-transform: uppercase;
+
+				&:focus, &:hover {
+					color: $wht;
+					background: transparent;
+				}
+			}
+
+			&.active a {
+				color: $wht;
+			}
+		}
+	}
+	
+	p {
+		text-align: center;
+		color: #b7b7b7;
+	}
+}
